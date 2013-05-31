@@ -32,6 +32,15 @@
 			<version>${project.version}</version>
 			<type>apklib</type>
 		</dependency>
+
+
+        <dependency>
+            <groupId>com.github.chrisbanes.photoview</groupId>
+            <artifactId>library</artifactId>
+            <type>jar</type>
+            <version>1.2.1</version>
+        </dependency>
+
 	</dependencies>
 
 	<build>

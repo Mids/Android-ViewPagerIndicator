@@ -5,10 +5,12 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import ru.truba.touchgallery.GalleryWidget.GalleryViewPager;
+
 /**
  * Created by jin on 13. 5. 31..
  */
-public class UninterceptableViewPager extends ViewPager {
+public class UninterceptableViewPager extends GalleryViewPager {
 
     public UninterceptableViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);

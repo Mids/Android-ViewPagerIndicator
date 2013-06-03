@@ -26,7 +26,7 @@ public class PhotoFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        PhotoView image = new PhotoView(getActivity());
+        ImageView image = new ImageView(getActivity());
         image.setImageResource(R.drawable.wallpaper);
         image.setLayoutParams(new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT, Gravity.CENTER));
         return image;

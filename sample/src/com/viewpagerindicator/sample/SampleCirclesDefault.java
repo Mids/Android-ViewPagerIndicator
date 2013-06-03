@@ -4,15 +4,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.View;
-import android.view.ViewGroup;
 import com.viewpagerindicator.CirclePageIndicator;
-import uk.co.senab.photoview.PhotoView;
 
 public class SampleCirclesDefault extends BaseSampleActivity {
 
+    UninterceptableViewPager mPager;
     SamplePagerAdapter mPagerAdapter;
 
     @Override
@@ -22,7 +18,7 @@ public class SampleCirclesDefault extends BaseSampleActivity {
 
         mPagerAdapter = new SamplePagerAdapter(getSupportFragmentManager());
 
-        mPager = (ViewPager)findViewById(R.id.pager);
+        mPager = (UninterceptableViewPager)findViewById(R.id.pager);
         mPager.setAdapter(mPagerAdapter);
 
         mIndicator = (CirclePageIndicator)findViewById(R.id.indicator);
@@ -45,10 +41,5 @@ public class SampleCirclesDefault extends BaseSampleActivity {
         public Fragment getItem(int i) {
             return new PhotoFragment();
         }
-
-
-
     }
-
-
 }
